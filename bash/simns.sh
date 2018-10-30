@@ -1,4 +1,4 @@
-#clone the repo
+#clone the sns repo
 git clone https://github.com/pietvvv/simple-node-server.git
 
 #delete the git repo

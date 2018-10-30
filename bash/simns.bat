@@ -1,4 +1,4 @@
-echo clone the repo
+echo clone the sns repo
 git clone https://github.com/pietvvv/simple-node-server.git
 rmdir /s /q .git
 
