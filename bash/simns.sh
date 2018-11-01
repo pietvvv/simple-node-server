@@ -1,16 +1,18 @@
-#clone the sns repo
-git clone https://github.com/pietvvv/simple-node-server.git
+#get all parameters through command line
+args=("$@")
 
-#delete the git repo
-rmdir /s /q .git
+#clone the sns repo
+git clone https://github.com/pietvvv/simple-node-server.git ${args[0]}
 
 #init repo
-cd simple-node-server
-rmdir /s /q .git
-git init
+cd ${args[0]}
+
+#delete the git repo
+rm -rf .git
 
 #initialize packages
 npm install
 bower install
 
-cd..
+#initialize git
+git init
