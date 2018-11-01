@@ -8,7 +8,7 @@ git clone https://github.com/pietvvv/simple-node-server.git ${args[0]}
 cd ${args[0]}
 
 #delete the git repo
-rmdir /s /q .git
+rm -rf .git
 
 #initialize packages
 npm install
@@ -16,4 +16,3 @@ bower install
 
 #initialize git
 git init
-cd..
