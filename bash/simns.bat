@@ -1,15 +1,18 @@
-echo clone the sns repo
-git clone https://github.com/pietvvv/simple-node-server.git
+rem all parameters through command line
+echo off
+set arg1=%1
+
+rem clone the sns repo
+git clone https://github.com/pietvvv/simple-node-server.git %arg1%
+
+rem delete the git repo
+cd %arg1%
 rmdir /s /q .git
 
-echo delete the git repo
-cd simple-node-server
-rmdir /s /q .git
-
-echo npm and bower initialize
+rem npm and bower initialize
 call npm install
 call bower install
 
-echo cleanup...
+rem cleanup...
 git init
 cd..
